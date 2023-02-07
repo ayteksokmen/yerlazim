@@ -1,0 +1,6 @@
+package com.sokmen.yerlazim.yerlazim
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
