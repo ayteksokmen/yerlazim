@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "941465184921",
+    "project_id": "yer-lazim",
+    "storage_bucket": "yer-lazim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941465184921:android:f77d0206a788c4ae412608",
+        "android_client_info": {
+          "package_name": "com.sokmen.yerlazim.yerlazim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941465184921-pjdgh0h5v4g8vqokms3c38sjucrmlii9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD90rfDp_T9hXiuqfK7ZYQqq4EBDgYycpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941465184921-pjdgh0h5v4g8vqokms3c38sjucrmlii9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "941465184921-dv0b9uc2o0k5l74dju82clkilhcs7sui.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sokmen.yerlazim"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

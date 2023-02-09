@@ -21,7 +21,20 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+def flutterMinSDKVersion = localProperties.getProperty('flutter.minSdkVersion')
+if (flutterMinSDKVersion == null) {
+    flutterMinSDKVersion = '19'
+}
+
+def flutterTargetSDKVersion = localProperties.getProperty('flutter.targetSdkVersion')
+if (flutterTargetSDKVersion == null) {
+    flutterTargetSDKVersion = '32'
+}
+
 apply plugin: 'com.android.application'
+// START: FlutterFire Configuration
+apply plugin: 'com.google.gms.google-services'
+// END: FlutterFire Configuration
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
@@ -44,8 +57,8 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.sokmen.yerlazim.yerlazim"
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        minSdkVersion flutterMinSDKVersion
+        targetSdkVersion flutterTargetSDKVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
